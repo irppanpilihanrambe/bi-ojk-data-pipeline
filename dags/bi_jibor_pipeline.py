@@ -6,13 +6,12 @@ import random
 from sqlalchemy import create_engine
 
 # ==========================================
-# 1. TAHAP EXTRACT & TRANSFORM (MOCK DATA)
+# 1. TAHAP EXTRACT & TRANSFORM 
 # ==========================================
 def run_etl_process():
     print("Mulai mengekstrak data keuangan publik...")
     
-    # Karena container Docker tidak ada akses internet eksternal,
-    # kita simulasikan penarikan data Kurs & JIBOR secara lokal.
+    
     time_updated = datetime.now()
     
     # Simulasi fluktuasi angka keuangan OJK/BI
